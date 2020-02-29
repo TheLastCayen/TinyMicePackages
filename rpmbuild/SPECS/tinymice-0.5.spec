@@ -50,7 +50,7 @@ chmod 644 /usr/share/icons/hicolor/128x128/apps/tinymice.png
 
 ln -s /usr/share/icons/hicolor/128x128/apps/tinymice.png /usr/share/pixmaps/tinymice.png
 ln -s /usr/share/tinymice/tinymice /usr/bin/tinymice
-chown root:root /usr/share/pixmaps/inymice.png
+chown root:root /usr/share/pixmaps/tinymice.png
 chown root:root /usr/bin/tinymice 
 
 chown root:root /usr/share/applications/TinyMouse.desktop
