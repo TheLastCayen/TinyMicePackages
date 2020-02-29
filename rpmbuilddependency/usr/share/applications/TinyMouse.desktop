@@ -1,7 +1,6 @@
 [Desktop Entry]
 Name=TinyMice
 Comment=Auto Clicker
-Keywords=game;snake;board;
 Exec=tinymice
 Icon=tinymice
 Terminal=false
