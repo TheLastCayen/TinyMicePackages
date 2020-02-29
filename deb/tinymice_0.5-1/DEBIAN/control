@@ -1,0 +1,11 @@
+Package: tinymice
+Version: 0.5-1
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: libsqlite3-dev
+Installed-Size: 1560
+Homepage: https://github.com/TheLastCayen/tinymice
+Maintainer: TheLastCayen <tinymice.github@gmail.com>
+Description: Simple and Light Auto Clicker developed with Lazarus and released under GPL V3 License.
+
