@@ -18,14 +18,14 @@ chown root:root /usr/share/icons/hicolor/128x128/apps/tinymice.png
 chmod 644 /usr/share/icons/hicolor/128x128/apps/tinymice.png
 
 # Create symbolic lync
-ln -s /usr/share/icons/hicolor/128x128/apps/tinymice.png /usr/share/pixmaps/tinymice.png 
-ln -s /usr/share/tinymice/tinymice /usr/bin/tinymice
+ln -sf /usr/share/icons/hicolor/128x128/apps/tinymice.png /usr/share/pixmaps/tinymice.png 
+ln -sf /usr/share/tinymice/tinymice /usr/bin/tinymice
 chown root:root /usr/share/pixmaps/tinymice.png
 chown root:root /usr/bin/tinymice 
 
 # Install Launcher
-mkdir -p usr/share/applications
-cp usr/share/applications/TinyMouse.desktop /usr/share/applications/TinyMouse.desktop
+mkdir -p /usr/share/applications
+cp ./usr/share/applications/TinyMouse.desktop /usr/share/applications/TinyMouse.desktop
 chown root:root /usr/share/applications/TinyMouse.desktop
 chmod 755 /usr/share/applications/TinyMouse.desktop
 
