@@ -1,4 +1,4 @@
-Name: TinyMice
+Name: tinymice
 Version: 0.5
 Release: 1
 License: GPLv3
