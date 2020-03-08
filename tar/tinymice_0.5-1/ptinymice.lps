@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="ptinymice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="8"/>
+        <CursorPos X="59" Y="12"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uprofilename.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FProfileName"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="23"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="udeleteprofile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDeleteProfile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="23"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="About/uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="45" Y="39"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uoptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="23"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="276"/>
+        <CursorPos X="4" Y="281"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="libs/Cross.Codebot-master/source/codebot.input.hotkeys.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Codebot.Input.Hotkeys"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="56" Y="7"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="pictures/umain.pas"/>
+        <ComponentName Value="FMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="20"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="lib/LazMouseAndKeyInput/lib/x86_64-linux/LazMouseAndKeyInput.compiled"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="ptinymice.pas"/>
+        <Caret Line="12" Column="59" TopLine="8"/>
+      </Position1>
+      <Position2>
+        <Filename Value="About/uabout.pas"/>
+      </Position2>
+      <Position3>
+        <Filename Value="About/uabout.pas"/>
+        <Caret Line="7" Column="84"/>
+      </Position3>
+      <Position4>
+        <Filename Value="About/uabout.pas"/>
+        <Caret Line="88" Column="3" TopLine="78"/>
+      </Position4>
+      <Position5>
+        <Filename Value="About/uabout.pas"/>
+        <Caret Line="93" Column="54" TopLine="78"/>
+      </Position5>
+      <Position6>
+        <Filename Value="About/uabout.pas"/>
+        <Caret Line="89" Column="3" TopLine="79"/>
+      </Position6>
+      <Position7>
+        <Filename Value="About/uabout.pas"/>
+        <Caret Line="94" Column="19" TopLine="86"/>
+      </Position7>
+      <Position8>
+        <Filename Value="About/uabout.pas"/>
+        <Caret Line="104" Column="19" TopLine="88"/>
+      </Position8>
+      <Position9>
+        <Filename Value="umain.pas"/>
+        <Caret Line="42" Column="79" TopLine="23"/>
+      </Position9>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+DATADIR = /usr/share
+BINDIR = /usr/bin
+
+ln -s $(DATADIR)/icons/hicolor/128x128/apps/tinymice.png $(DATADIR)/pixmaps/tinymice.png
+ln -s $(DATADIR)/tinymice/tinymice $(BINDIR)/tinymice
+chown root:root $(DATADIR)/pixmaps/tinymice.png
+chown root:root $(BINDIR)/tinymice
+
+echo "[Desktop Entry]" > $(DATADIR)/applications/TinyMouse.desktop
+echo "Name=TinyMice" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Comment=Auto Clicker" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Exec=tinymice" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Icon=tinymice" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Terminal=false" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Type=Application" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Categories=Utility;" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "StartupNotify=true" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "Keywords=Auto;Clicker;AutoClicker;Auto Clicker;Mouse;" >> $(DATADIR)/applications/TinyMouse.desktop
+
+chown root:root $(DATADIR)/applications/TinyMouse.desktop
+chmod 755 $(DATADIR)/applications/TinyMouse.desktop
+

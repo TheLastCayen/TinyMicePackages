@@ -11,6 +11,40 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "Language: en\n"
 
+#: tfabout.caption
+msgctxt "tfabout.caption"
+msgid "About"
+msgstr ""
+
+#: tfabout.lcopyright.caption
+msgid "CopyRight (C)  2020, Daniel Babin"
+msgstr ""
+
+#: tfabout.lemail.caption
+msgid "tinymice.github@gmail.com"
+msgstr ""
+
+#: tfabout.limage.caption
+msgid "Icons from Lazarus and www.iconarchive.com"
+msgstr ""
+
+#: tfabout.lurl.caption
+msgid "https://github.com/TheLastCayen/tinymice"
+msgstr ""
+
+#: tfabout.tabsheet1.caption
+msgctxt "tfabout.tabsheet1.caption"
+msgid "About"
+msgstr ""
+
+#: tfabout.tabsheet2.caption
+msgid "Contributors"
+msgstr ""
+
+#: tfabout.tabsheet3.caption
+msgid "ChangeLog"
+msgstr ""
+
 #: umain.cdeleteprofile
 msgctxt "umain.cdeleteprofile"
 msgid "Delete profile : "

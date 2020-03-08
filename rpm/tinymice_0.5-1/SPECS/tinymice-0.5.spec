@@ -20,7 +20,6 @@ mkdir -p %{buildroot}/usr/share/applications
 
 cp -R %{_sourcedir}/usr/share/tinymice %{buildroot}/usr/share/
 cp %{_sourcedir}/usr/share/icons/hicolor/128x128/apps/tinymice.png %{buildroot}/usr/share/icons/hicolor/128x128/apps/tinymice.png
-cp %{_sourcedir}/usr/share/applications/TinyMouse.desktop %{buildroot}/usr/share/applications/TinyMouse.desktop 
 
 exit
 
@@ -28,7 +27,6 @@ exit
 %attr(0644, root, root) %{_datadir}/tinymice/languages/*
 %attr(0744, root, root) %{_datadir}/tinymice/tinymice
 %attr(0644, root, root) %{_datadir}/icons/hicolor/128x128/apps/tinymice.png
-%attr(0755, root, root) %{_datadir}/applications/TinyMouse.desktop
 
 %pre
 
@@ -45,6 +43,16 @@ ln -s %{_datadir}/tinymice/tinymice %{_bindir}/tinymice
 chown root:root %{_datadir}/pixmaps/tinymice.png
 chown root:root %{_bindir}/tinymice
 
+echo "[Desktop Entry]" 		>  %{_datadir}/applications/TinyMouse.desktop
+echo "Name=TinyMice" 		>> %{_datadir}/applications/TinyMouse.desktop
+echo "Comment=Auto Clicker" 	>> %{_datadir}/applications/TinyMouse.desktop
+echo "Exec=tinymice" 		>> %{_datadir}/applications/TinyMouse.desktop
+echo "Icon=tinymice" 		>> %{_datadir}/applications/TinyMouse.desktop
+echo "Terminal=false" 		>> %{_datadir}/applications/TinyMouse.desktop
+echo "Type=Application" 	>> %{_datadir}/applications/TinyMouse.desktop
+echo "Categories=Utility;" 	>> %{_datadir}/applications/TinyMouse.desktop
+echo "StartupNotify=true" 	>> %{_datadir}/applications/TinyMouse.desktop
+echo "Keywords=Auto;Clicker;AutoClicker;Auto Clicker;Mouse;" >> %{_datadir}/applications/TinyMouse.desktop
 chown root:root %{_datadir}/applications/TinyMouse.desktop
 chmod 755 %{_datadir}/applications/TinyMouse.desktop
 
