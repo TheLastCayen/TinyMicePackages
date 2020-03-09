@@ -6,7 +6,7 @@ BINDIR = /usr/bin
 tinymice: $(OBJ)
 	$(CC) $^
 
-	if test -f /usr/bin/upx; then
+	if test -f /usr/bin/upx then
 		upx --best ./bin/$@	
 	fi
 
