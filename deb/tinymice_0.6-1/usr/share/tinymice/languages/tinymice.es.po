@@ -69,7 +69,7 @@ msgstr "eliminar"
 
 #: tfdeleteprofile.lconfirm3.caption
 msgid "to permanently Delete"
-msgstr "Eliminar permanentemente"
+msgstr "eliminar permanentemente"
 
 #: tfmain.badd.caption
 msgid "Add"
@@ -108,7 +108,7 @@ msgstr "Perfiles de clic automático"
 #: tfmain.lprofileclick.caption
 msgctxt "tfmain.lprofileclick.caption"
 msgid "Profile Click Interval :"
-msgstr " Perfiles de clic automático :"
+msgstr "Perfiles de clic automático :"
 
 #: tfmain.lsingleclick.caption
 msgid "Simple Click Interval :"
@@ -186,56 +186,52 @@ msgid "Hide / Show"
 msgstr "Ocultar / Mostrar"
 
 #: tfoptions.bcancel.caption
-#, fuzzy
 msgctxt "tfoptions.bcancel.caption"
 msgid "Cancel"
 msgstr "Cancelar"
 
 #: tfoptions.bsave.caption
-#, fuzzy
 msgctxt "tfoptions.bsave.caption"
 msgid "Save"
 msgstr "Salvar"
 
 #: tfoptions.caption
-#, fuzzy
 msgctxt "tfoptions.caption"
 msgid "Options"
 msgstr "Opciones"
 
 #: tfoptions.cbcloseminimized.caption
 msgid "Minimize on Close"
-msgstr ""
+msgstr "Minimizar al cerrar"
 
 #: tfoptions.cbstartminimized.caption
 msgid "Start Minimized"
-msgstr ""
+msgstr "Iniciar minimizado"
 
 #: tfoptions.cbsystray.caption
 msgid "Minimize To Tray"
-msgstr ""
+msgstr "Minimizar a la bandeja del sistema"
 
 #: tfoptions.label5.caption
-#, fuzzy
 msgctxt "tfoptions.label5.caption"
 msgid "Profile"
-msgstr "Perfil"
+msgstr "Perfiles"
 
 #: tfoptions.ldeletemouse.caption
 msgid "Delete Last Mouse Position :"
-msgstr ""
+msgstr "Eliminar la última posición del mouse :"
 
 #: tfoptions.lprofileclick.caption
 msgid "Start / Stop Profile Click :"
-msgstr ""
+msgstr "Iniciar / detener clic de perfil :"
 
 #: tfoptions.lsavemouse.caption
 msgid "Save Mouse Position :"
-msgstr ""
+msgstr "Guardar posición del mouse:"
 
 #: tfoptions.lsingleclick.caption
 msgid "Start / Stop Single Click :"
-msgstr ""
+msgstr "Iniciar / detener un solo clic:"
 
 #: tfprofilename.bcancel.caption
 msgctxt "tfprofilename.bcancel.caption"
@@ -258,7 +254,7 @@ msgstr "Perfil :"
 #: tfprofilename.lsp.caption
 msgctxt "tfprofilename.lsp.caption"
 msgid "Profile Click Interval :"
-msgstr " Perfiles de clic automático :"
+msgstr "Perfiles de clic automático :"
 
 #: tfprofilename.spclickinterval.hint
 msgctxt "tfprofilename.spclickinterval.hint"
@@ -267,7 +263,7 @@ msgstr "Intervalo de clics de perfil en milisegundos"
 
 #: umain.cdeleteprofile
 msgid "Delete profile : "
-msgstr "Borrar perfil"
+msgstr "Borrar perfil : "
 
 #: umain.cmouseaction
 msgid "Mouse Action"
@@ -285,4 +281,3 @@ msgstr "Ratón Y"
 msgctxt "umain.cprofile"
 msgid "Profile"
 msgstr "Perfil"
-

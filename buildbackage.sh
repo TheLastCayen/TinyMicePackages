@@ -24,6 +24,7 @@ create_tar_gz () {
 
 	mkdir -p ./tar/tinymice_$SV-$PV/
 	cp ../tinymice/* ./tar/tinymice_$SV-$PV/ -R
+    rm -f ./tar/tinymice_$SV-$PV/bin/*
 	cd ./tar
 	tar -zcvf ../bin/tinymice_$SV-$PV.tar.gz ./tinymice_$SV-$PV 
 	cd ..
@@ -40,19 +41,22 @@ create_deb () {
 	mkdir -p ./deb/tinymice_$SV-$PV/usr/share/doc/tinymice
 
 	cp ./deb/resources/DEBIAN/* ./deb/tinymice_$SV-$PV/DEBIAN/
-	#Create Control File
-	echo "Package: tinymice"						>  ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Version: $SV-$PV"							>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Section: utils"							>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Priority: optional"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Architecture: amd64"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Depends: libsqlite3-dev"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Installed-Size: 1560"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Homepage: https://github.com/TheLastCayen/tinymice"		>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Maintainer: TheLastCayen <tinymice.github@gmail.com>"		>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo "Description:Simple and Light Auto Clicker "			>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo " Simple and Light Auto Clicker developed with "			>> ./deb/tinymice_$SV-$PV/DEBIAN/control
-	echo " Lazarus and released under GPL V3 License."			>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+    #sed -e 's/_SVersion/'$SV'/g'        ./rpm/resources/tinymice.spec > ./rpm/tinymice_$SV-$PV/SPECS/tinymice-$SV.spec
+    sed -i -e 's/_SVersion/'$SV'/g' -e 's/_PVersion/'$PV'/g'     ./deb/tinymice_$SV-$PV/DEBIAN/control
+
+	##Create Control File
+	#echo "Package: tinymice"						>  ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Version: $SV-$PV"							>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Section: utils"							>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Priority: optional"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Architecture: amd64"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Depends: libsqlite3-dev"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Installed-Size: 1560"						>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Homepage: https://github.com/TheLastCayen/tinymice"		>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Maintainer: TheLastCayen <tinymice.github@gmail.com>"		>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo "Description:Simple and Light Auto Clicker "			>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo " Simple and Light Auto Clicker developed with "			>> ./deb/tinymice_$SV-$PV/DEBIAN/control
+	#echo " Lazarus and released under GPL V3 License."			>> ./deb/tinymice_$SV-$PV/DEBIAN/control
 
 	cp $SOURCE/bin/tinymice 		./deb/tinymice_$SV-$PV/usr/share/tinymice
 	cp $SOURCE/copyright 			./deb/tinymice_$SV-$PV/usr/share/doc/tinymice/
@@ -84,14 +88,12 @@ create_rpm () {
 	rm -f ./bin/tinymice-$SV-$PV.x86_64.rpm
 	rm -Rf ./rpm/tinymice_$SV-$PV
 
-
 	mkdir -p ./rpm/tinymice_$SV-$PV/SOURCES/usr/share/tinymice/languages
 	mkdir -p ./rpm/tinymice_$SV-$PV/SOURCES/usr/share/icons/hicolor/128x128/apps
 	mkdir -p ./rpm/tinymice_$SV-$PV/SPECS
 
-	cp ./rpm/resources/tinymice.spec 	./rpm/tinymice_$SV-$PV/SPECS/tinymice-$SV.spec
-    sed 's/_SVersion/$SV/g'             ./rpm/tinymice_$SV-$PV/SPECS/tinymice-$SV.spec
-    sed 's/_PVersion/$SP/g'             ./rpm/tinymice_$SV-$PV/SPECS/tinymice-$SV.spec    
+    sed -e 's/_SVersion/'$SV'/g'        ./rpm/resources/tinymice.spec > ./rpm/tinymice_$SV-$PV/SPECS/tinymice-$SV.spec
+    sed -i -e 's/_PVersion/'$PV'/g'     ./rpm/tinymice_$SV-$PV/SPECS/tinymice-$SV.spec 
 
 	cp $SOURCE/bin/tinymice 		./rpm/tinymice_$SV-$PV/SOURCES/usr/share/tinymice/
 	cp $SOURCE/languages/* 			./rpm/tinymice_$SV-$PV/SOURCES/usr/share/tinymice/languages/ 
@@ -120,8 +122,9 @@ clean_sources () {
 
 clear
 #install_dependency
-#compile_software
-#create_tar_gz
-#create_deb
+clean_sources
+compile_software
+create_tar_gz
+create_deb
 create_rpm
-#clean_sources
+clean_sources

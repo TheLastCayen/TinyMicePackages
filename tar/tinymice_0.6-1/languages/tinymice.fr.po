@@ -186,56 +186,52 @@ msgid "Hide / Show"
 msgstr "Cacher / Afficher"
 
 #: tfoptions.bcancel.caption
-#, fuzzy
 msgctxt "tfoptions.bcancel.caption"
 msgid "Cancel"
 msgstr "Annuler"
 
 #: tfoptions.bsave.caption
-#, fuzzy
 msgctxt "tfoptions.bsave.caption"
 msgid "Save"
 msgstr "Sauvegarder"
 
 #: tfoptions.caption
-#, fuzzy
 msgctxt "tfoptions.caption"
 msgid "Options"
 msgstr "Options"
 
 #: tfoptions.cbcloseminimized.caption
 msgid "Minimize on Close"
-msgstr ""
+msgstr "Minimisé a la fermeture"
 
 #: tfoptions.cbstartminimized.caption
 msgid "Start Minimized"
-msgstr ""
+msgstr "Démarrer Minimisé"
 
 #: tfoptions.cbsystray.caption
 msgid "Minimize To Tray"
-msgstr ""
+msgstr "Réduire dans la zone de notification"
 
 #: tfoptions.label5.caption
-#, fuzzy
 msgctxt "tfoptions.label5.caption"
 msgid "Profile"
 msgstr "Profil :"
 
 #: tfoptions.ldeletemouse.caption
 msgid "Delete Last Mouse Position :"
-msgstr ""
+msgstr "Supprimer la dernière position de la souris :"
 
 #: tfoptions.lprofileclick.caption
 msgid "Start / Stop Profile Click :"
-msgstr ""
+msgstr "Démarrer / Arrêter le clic du profil :"
 
 #: tfoptions.lsavemouse.caption
 msgid "Save Mouse Position :"
-msgstr ""
+msgstr "Sauvegarder la position de la souris :"
 
 #: tfoptions.lsingleclick.caption
 msgid "Start / Stop Single Click :"
-msgstr ""
+msgstr "Démarrer / Arrêter le simple clic :"
 
 #: tfprofilename.bcancel.caption
 msgctxt "tfprofilename.bcancel.caption"
@@ -285,4 +281,3 @@ msgstr "Souris Y"
 msgctxt "umain.cprofile"
 msgid "Profile"
 msgstr "Profil :"
-

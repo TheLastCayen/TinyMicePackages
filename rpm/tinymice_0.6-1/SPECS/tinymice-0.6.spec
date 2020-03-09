@@ -1,6 +1,6 @@
 Name: tinymice
-Version: _SVersion
-Release: _PVersion
+Version: 0.6
+Release: 1
 License: GPLv3
 URL: https://github.com/TheLastCayen/tinymice
 Packager: TheLastCayen <tinymice.github@gmail.com>

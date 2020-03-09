@@ -186,56 +186,52 @@ msgid "Hide / Show"
 msgstr "Hide / Show"
 
 #: tfoptions.bcancel.caption
-#, fuzzy
 msgctxt "tfoptions.bcancel.caption"
 msgid "Cancel"
 msgstr "Cancel"
 
 #: tfoptions.bsave.caption
-#, fuzzy
 msgctxt "tfoptions.bsave.caption"
 msgid "Save"
 msgstr "Save"
 
 #: tfoptions.caption
-#, fuzzy
 msgctxt "tfoptions.caption"
 msgid "Options"
 msgstr "Options"
 
 #: tfoptions.cbcloseminimized.caption
 msgid "Minimize on Close"
-msgstr ""
+msgstr "Minimize on Close"
 
 #: tfoptions.cbstartminimized.caption
 msgid "Start Minimized"
-msgstr ""
+msgstr "Start Minimized"
 
 #: tfoptions.cbsystray.caption
 msgid "Minimize To Tray"
-msgstr ""
+msgstr "Minimize To Tray"
 
 #: tfoptions.label5.caption
-#, fuzzy
 msgctxt "tfoptions.label5.caption"
 msgid "Profile"
 msgstr "Profile"
 
 #: tfoptions.ldeletemouse.caption
 msgid "Delete Last Mouse Position :"
-msgstr ""
+msgstr "Delete Last Mouse Position :"
 
 #: tfoptions.lprofileclick.caption
 msgid "Start / Stop Profile Click :"
-msgstr ""
+msgstr "Start / Stop Profile Click :"
 
 #: tfoptions.lsavemouse.caption
 msgid "Save Mouse Position :"
-msgstr ""
+msgstr "Save Mouse Position :"
 
 #: tfoptions.lsingleclick.caption
 msgid "Start / Stop Single Click :"
-msgstr ""
+msgstr "Start / Stop Single Click :"
 
 #: tfprofilename.bcancel.caption
 msgctxt "tfprofilename.bcancel.caption"
@@ -285,4 +281,3 @@ msgstr "Mouse Y"
 msgctxt "umain.cprofile"
 msgid "Profile"
 msgstr "Profile"
-
