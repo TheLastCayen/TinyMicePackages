@@ -5,10 +5,10 @@ BINDIR = /usr/bin
 
 tinymice: $(OBJ)
 	$(CC) $^
-
-	if test -f /usr/bin/upx then
-		upx --best ./bin/$@	
-	fi
+#	ifeq (, $(shell which upx))
+#	ifneq ("$(wildcard /usr/bin/upx)","")
+#	upx --best ./bin/$@
+#	endif
 
 .PHONY: clean
 
