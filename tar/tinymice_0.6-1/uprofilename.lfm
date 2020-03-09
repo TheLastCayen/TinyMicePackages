@@ -2147,7 +2147,7 @@ object FProfileName: TFProfileName
     Constraints.MinWidth = 72
     Enabled = False
     Images = FMain.ImageList1
-    ImageIndex = 9
+    ImageIndex = 11
     OnClick = BSaveClick
     TabOrder = 1
   end
