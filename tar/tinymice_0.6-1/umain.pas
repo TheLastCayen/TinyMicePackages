@@ -246,6 +246,8 @@ begin
       Transaction := SQLTransaction;
     end;
 
+  TestDB;
+
   //Load Application Settings
   LoadOptions;
 
@@ -258,8 +260,6 @@ begin
   DBGProfiles.DataSource := DataProfiles;
   DBGMouse.DataSource    := DataMouse;
   DBGProfiles.DataSource.DataSet.AfterScroll := @ChangeProfile;
-
-  TestDB;
 
   RefreshProfiles;
 
@@ -808,11 +808,14 @@ end;
 procedure TFMain.MigrateDB;
 var
   SQLOption: TSQLQuery;
+  SQLUpdate: TSQLQuery;
 begin
  // Load Settings
   SQLOption := TSQLQuery.Create(nil);
+  SQLUpdate := TSQLQuery.Create(nil);
   ///////////////////////////////////////////////////////////////////////////////////////;
   SQLOption.DataBase := DBConnection;
+  SQLUpdate.DataBase := DBConnection;
   SQLOption.Close;
   SQLOption.SQL.Clear;
   SQLOption.SQL.Add('SELECT ');
@@ -823,7 +826,7 @@ begin
   //If it's first version of database
   if not Assigned(SQLOption.FindField('DatabaseVersion')) then
     begin
-      With SQLQuery do
+      With SQLUpdate do
         begin
           //Rename Table to remporary table
           SQL.Add('ALTER TABLE "OPTIONS" RENAME TO "_OPTIONS_old";');
@@ -905,24 +908,29 @@ begin
 
   if SQLOption.FieldByName('DatabaseVersion').AsFloat = DatabaseVersion then
     begin
-      SQLQuery.SQL.Clear;
-      SQLQuery.SQL.Add('DROP TABLE IF EXISTS "_OPTIONS_old";');
-      SQLQuery.ExecSQL;
+      SQLUpdate.SQL.Clear;
+      SQLUpdate.SQL.Add('DROP TABLE IF EXISTS "_OPTIONS_old";');
+      SQLUpdate.ExecSQL;
       SQLTransaction.CommitRetaining;
     end;
 
   SQLOption.Close;
-  SQLQuery.Close;
+  SQLUpdate.Close;
   DBConnection.Close;
+  SQLUpdate.Free;
   SQLOption.Free;
 end;
 
 
 procedure TFMain.CreateDB;
+var
+  SQLUpdate: TSQLQuery;
 begin
   DBConnection.CreateDB;
-  With SQLQuery do
+  SQLUpdate := TSQLQuery.Create(nil);
+  With SQLUpdate do
     begin
+      DataBase := DBConnection;
       SQL.Clear;
       SQL.Add('CREATE TABLE "OPTIONS"(');
       SQL.Add('"ID" INTEGER NOT NULL PRIMARY KEY,');
@@ -966,14 +974,19 @@ begin
 
   end;
   SQLTransaction.Commit;
-  SQLQuery.Close;
+  SQLUpdate.Close;
+  SQLUpdate.Free;
   DBConnection.Close;
   PopulateDB;
 end;
 Procedure TFMain.PopulateDB;
+var
+  SQLUpdate : TSQLQuery;
 begin
-  With SQLQuery do
+  SQLUpdate := TSQLQuery.Create(nil);
+  With SQLUpdate do
     begin
+      DataBase := DBConnection;
       SQL.Clear;
       SQL.Add('INSERT INTO "OPTIONS"(');
       SQL.Add('"StartMinimized", ');
@@ -1008,6 +1021,8 @@ begin
       SQL.Add(');');
       ExecSQL;
     end;
+  SQLUpdate.Close;
+  SQLUpdate.Free;
   SQLTransaction.Commit;
 end;
 Procedure TFMain.LoadOptions;

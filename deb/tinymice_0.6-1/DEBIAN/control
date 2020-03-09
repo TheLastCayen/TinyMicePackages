@@ -1,5 +1,5 @@
 Package: tinymice
-Version: 0.5-1
+Version: 0.6-1
 Section: utils
 Priority: optional
 Architecture: amd64
@@ -10,4 +10,3 @@ Maintainer: TheLastCayen <tinymice.github@gmail.com>
 Description:Simple and Light Auto Clicker 
  Simple and Light Auto Clicker developed with 
  Lazarus and released under GPL V3 License.
-

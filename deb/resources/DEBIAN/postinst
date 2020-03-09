@@ -1,24 +1,22 @@
 #!/bin/bash
 set -e
-DATADIR = /usr/share
-BINDIR = /usr/bin
 
-ln -s $(DATADIR)/icons/hicolor/128x128/apps/tinymice.png $(DATADIR)/pixmaps/tinymice.png
-ln -s $(DATADIR)/tinymice/tinymice $(BINDIR)/tinymice
-chown root:root $(DATADIR)/pixmaps/tinymice.png
-chown root:root $(BINDIR)/tinymice
+ln -s /usr/share/icons/hicolor/128x128/apps/tinymice.png /usr/share/pixmaps/tinymice.png
+ln -s /usr/share/tinymice/tinymice /usr/bin/tinymice 
+#chown root:root /usr/share/pixmaps/tinymice.png
+#chown root:root /usr/bin/tinymice
 
-echo "[Desktop Entry]" > $(DATADIR)/applications/TinyMouse.desktop
-echo "Name=TinyMice" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Comment=Auto Clicker" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Exec=tinymice" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Icon=tinymice" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Terminal=false" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Type=Application" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Categories=Utility;" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "StartupNotify=true" >> $(DATADIR)/applications/TinyMouse.desktop
-echo "Keywords=Auto;Clicker;AutoClicker;Auto Clicker;Mouse;" >> $(DATADIR)/applications/TinyMouse.desktop
+echo "[Desktop Entry]" > /usr/share/applications/TinyMouse.desktop
+echo "Name=TinyMice" >> /usr/share/applications/TinyMouse.desktop
+echo "Comment=Auto Clicker" >> /usr/share/applications/TinyMouse.desktop
+echo "Exec=tinymice" >> /usr/share/applications/TinyMouse.desktop
+echo "Icon=tinymice" >> /usr/share/applications/TinyMouse.desktop
+echo "Terminal=false" >> /usr/share/applications/TinyMouse.desktop
+echo "Type=Application" >> /usr/share/applications/TinyMouse.desktop
+echo "Categories=Utility;" >> /usr/share/applications/TinyMouse.desktop
+echo "StartupNotify=true" >> /usr/share/applications/TinyMouse.desktop
+echo "Keywords=Auto;Clicker;AutoClicker;Auto Clicker;Mouse;" >> /usr/share/applications/TinyMouse.desktop
 
-chown root:root $(DATADIR)/applications/TinyMouse.desktop
-chmod 755 $(DATADIR)/applications/TinyMouse.desktop
+chown root:root /usr/share/applications/TinyMouse.desktop
+chmod 755 /usr/share/applications/TinyMouse.desktop
 

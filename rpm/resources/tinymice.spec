@@ -1,12 +1,11 @@
 Name: tinymice
-Version: 0.5
-Release: 1
+Version: _SVersion
+Release: _PVersion
 License: GPLv3
 URL: https://github.com/TheLastCayen/tinymice
 Packager: TheLastCayen <tinymice.github@gmail.com>
 Requires: libsqlite3x-devel
 BuildArch: x86_64
-#BuildRoot: /media/Public/git/tinymicepackages/rpmbuild
 
 Summary: Simple and Light Auto Clicker
 
@@ -29,6 +28,11 @@ exit
 %attr(0644, root, root) %{_datadir}/icons/hicolor/128x128/apps/tinymice.png
 
 %pre
+rm -f %{_datadir}/applications/TinyMouse.desktop
+rm -f %{_datadir}/pixmaps/tinymice.png
+rm -f %{_bindir}/tinymice
+rm -f %{_datadir}/icons/hicolor/128x128/apps/tinymice.png
+rm -Rf %{_datadir}/tinymice
 
 %post
 chown -R root:root %{_datadir}/tinymice

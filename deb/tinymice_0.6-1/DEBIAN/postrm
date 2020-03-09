@@ -1,11 +1,9 @@
 #!/bin/bash
 set -e
-DATADIR = /usr/share
-BINDIR = /usr/bin
 
-rm -f $(DATADIR)/applications/TinyMouse.desktop
-rm -f $(DATADIR)/pixmaps/tinymice.png
-rm -f $(BINDIR)/tinymice
-rm -f $(DATADIR)/icons/hicolor/128x128/apps/tinymice.png
-rm -Rf $(DATADIR)/tinymice
+rm -f /usr/share/applications/TinyMouse.desktop
+rm -f /usr/share/pixmaps/tinymice.png
+rm -f /usr/bin/tinymice
+rm -f /usr/share/icons/hicolor/128x128/apps/tinymice.png
+rm -Rf /usr/share/tinymice
 
