@@ -23,8 +23,7 @@
     </i18n>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
-      <MinorVersionNr Value="5"/>
-      <RevisionNr Value="1"/>
+      <MinorVersionNr Value="6"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
