@@ -1,0 +1,35 @@
+wixl-heat(1)                                                                         General Commands Manual                                                                         wixl-heat(1)
+
+NNAAMMEE
+       wixl-heat - builds Wix XML fragments from a list of files and directories
+
+SSYYNNOOPPSSIISS
+       wwiixxll--hheeaatt [<_o_p_t_i_o_n> [<_o_p_t_i_o_n> ...]]
+
+DDEESSCCRRIIPPTTIIOONN
+       wwiixxll--hheeaatt builds an Wix XML fragment from a list of files given on the standard input. The XML fragment is output to the standard output.
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              Print a help message and exit.
+
+       ----ddiirreeccttoorryy--rreeff <_d_i_r_e_c_t_o_r_y>
+              Specifies the directory reference for the DDiirreeccttoorryyRReeff element.
+
+       ----ccoommppoonneenntt--ggrroouupp <_c_o_m_p_o_n_e_n_t _g_r_o_u_p>
+              Specifies the component group for the CCoommppoonneennttGGrroouupp element.
+
+       ----vvaarr <<_v_a_r_i_a_b_l_e>>
+              Specifies the variable to use for the source directory in the SSoouurrccee attribute of the FFiillee elements.
+
+       --pp, ----pprreeffiixx <_d_i_r_e_c_t_o_r_y>
+              Specifies the prefix in which the files are based (this is removed from the resulting file names).
+
+       --xx, ----eexxcclluuddee <_d_i_r_e_c_t_o_r_y>
+              Excludes any files with the given prefix.
+
+AAUUTTHHOORRSS
+       wwiixxll--hheeaatt was written by Marc-André Lureau for Red Hat, Inc.  This manual page was adapted from the program usage information by Stephen Kitt <skitt@debian.org>, for the Debian GNU/Linux
+       system (but may be used by others). It was last modified for wwiixxll version 0.93.
+
+wixl                                                                                    December 26, 2014                                                                            wixl-heat(1)

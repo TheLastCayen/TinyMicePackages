@@ -1,0 +1,26 @@
+var createMsi = require('./')
+ 
+var options = {
+ 
+  // required
+  source: '/media/Public/git/tinymicepackages/msi/test',
+  output: '/media/Public/git/tinymicepackages/msi/tinymice_x64_0.6_1.1.msi',
+  name: 'TinyMice',
+  upgradeCode: 'C8FAF528-092C-40E9-98B8-617EE0228968',
+  version: '0.6.1',
+  manufacturer: 'TheLastCayen',
+  iconPath: '/media/Public/git/tinymice/ptinymice.ico',
+  executable: 'tinymice.exe',
+ 
+  // optional
+  description: "Simple and Light AutoClicker",
+  arch: 'x64',
+  localInstall: false
+ 
+}
+ 
+createMsi(options, function (err) {
+  if (err) throw err
+  console.log('Outputed to ' + options.output)
+})
+

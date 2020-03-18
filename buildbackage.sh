@@ -5,7 +5,7 @@ SOURCE="../tinymice"	# TinyMice Source Location
 
 #Install dependency
 install_dependency () {
-	sudo apt-get install upx gnupg pbuilder ubuntu-dev-tools apt-file build-essential dpkg rpm
+	sudo apt-get install upx gnupg pbuilder ubuntu-dev-tools apt-file build-essential dpkg rpm wixl msitools
 # ? devscripts
 # ? debhelper
 }
@@ -106,10 +106,10 @@ clean_sources () {
 }
 
 clear
-#install_dependency
-clean_sources
-compile_software
-create_tar_gz
-create_deb
-create_rpm
-clean_sources
+install_dependency
+#clean_sources
+#compile_software
+#create_tar_gz
+#create_deb
+#create_rpm
+#clean_sources
